@@ -20,7 +20,7 @@ export default async function handler(req, res) {
         headers: {
           'Content-Type': 'application/json',
           'anthropic-version': '2023-06-01',
-          'x-api-key': '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'
+          'x-api-key': process.env.ANTHROPIC_API_KEY
         },
         body: JSON.stringify(body)
       });
